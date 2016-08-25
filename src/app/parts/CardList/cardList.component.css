@@ -1,0 +1,12 @@
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+li {
+    width: 300px;
+    height: 420px;
+}
+.selected {
+    background-color: red;
+}

@@ -1,0 +1,32 @@
+.card-details {
+    
+    background-color: rgba(50,50,50,0.9); 
+    
+    display: flex;
+    flex-flow: row nowrap;
+    color:#fff;
+    /*border:solid 1px #fff;*/
+    min-height: 200px;
+}
+img {
+    align-self: flex-start;
+}
+.stats {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+.stats > li {
+    display: inline-block;
+    height: 50px;
+    width:50px;
+    background-color: #f99;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+.stats > li > span {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: block;
+}

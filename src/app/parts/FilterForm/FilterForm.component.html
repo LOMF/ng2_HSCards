@@ -1,0 +1,28 @@
+<div class="filter-form">
+    <input (input)="this.filterUpdated.emit({key:'name',value:$event.target.value})" placeholder="Card name">
+    <label>Class:</label>
+    <select (input)="this.filterUpdated.emit({key:'playerClass',value:$event.target.value})" placeholder="Card name">
+        <option value=""></option>
+        <option *ngFor="let s of CardClass" value={{s.name}}>{{s.name}}</option>
+    </select>
+    <label>Card set:</label>
+    <select (input)="this.filterUpdated.emit({key:'set',value:$event.target.value})" placeholder="Card name">
+        <option value=""></option>
+        <option *ngFor="let s of CardSet" value={{s.name}}>{{s.name}}</option>
+    </select>
+    <label>Rarity:</label>
+    <select (input)="this.filterUpdated.emit({key:'rarity',value:$event.target.value})" placeholder="Card name">
+        <option value=""></option>
+        <option *ngFor="let s of Rarity" value={{s.name}}>{{s.name}}</option>
+    </select>
+     <label>Race:</label>
+    <select (input)="this.filterUpdated.emit({key:'race',value:$event.target.value})" placeholder="Card name">
+        <option value=""></option>
+        <option *ngFor="let s of Race" value={{s.name}}>{{s.name}}</option>
+    </select>
+     <label>Type:</label>
+    <select (input)="this.filterUpdated.emit({key:'type',value:$event.target.value})" placeholder="Card name">
+        <option value=""></option>
+        <option *ngFor="let s of CardType" value={{s.name}}>{{s.name}}</option>
+    </select>
+</div>

@@ -1,0 +1,3 @@
+<ul (click)="this.selectCard(null)">
+    <li *ngFor="let card of (cards)|filter:filter|slice:0:100"><card-item (click)="this.selectCard(card,$event.target);this.cardSelected.emit(card);$event.stopPropagation();" [selected]="(this.selectedCard && card.id === this.selectedCard.id)" [card]="card"></card-item></li>
+</ul> 

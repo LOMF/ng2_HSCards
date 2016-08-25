@@ -1,0 +1,28 @@
+header {
+        height: 80px;
+    color: #ffa500;
+    background-color: #333;
+    padding: 14px;
+    border-bottom: solid 1px #fff;
+}
+section {
+    display: flex;
+    flex-flow:row nowrap;
+    /*height: calc(100vh - 80px);*/
+}
+card-list {
+    flex-basis: 80%;
+    flex-grow: 1;
+    height: calc(100vh - 80px);
+
+        overflow: auto;
+}
+filter-form {
+      
+    flex-basis: 20%;
+    background-color: #333;
+}
+card-details {
+    flex-basis: 20%;
+    background-color: #333;
+}

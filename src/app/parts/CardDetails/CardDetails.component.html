@@ -1,0 +1,13 @@
+<section class="card-details" (click)="this.closeDetails.emit()">
+    <!--<img src="/images/{{card.id}}.png" alt="{{card.name}}">-->
+    <section >
+        <h1>{{card.name}}</h1>
+        <h2 [innerHTML]="card.text"></h2>
+        <p *ngIf="card.flavor" class="flavor">{{card.flavor}}</p>
+        <ul class="stats">
+            <li><span>Cost</span>{{card.cost}}</li>
+            <li><span>attack</span>{{card.attack}}</li>
+            <li><span>health</span>{{card.health}}</li>
+        </ul>
+    </section>
+</section>

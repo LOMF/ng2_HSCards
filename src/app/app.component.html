@@ -1,0 +1,9 @@
+<header>
+    <h1>HeartStone Card viewer</h1>
+</header>
+
+<section>
+    <filter-form (filterUpdated)="this.filter = onFilterChange($event)"></filter-form>
+    <card-list [selectedCard]="this.selectedCard" [filter]="this.filter" (cardSelected)="this.selectedCard = $event;"></card-list>
+    <card-details *ngIf="this.selectedCard" [card]="this.selectedCard" (closeDetails)="this.selectedCard = null"></card-details>
+</section>
